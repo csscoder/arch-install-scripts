@@ -21,6 +21,7 @@ systemctl enable NetworkManager
 
 useradd -m csscoder
 echo csscoder:password | chpasswd
+usermod -aG wheel csscoder
 
-printf "\e[1;32mDone! ||| sudo nano /etc/sudoers ||| %wheel ALL=(ALL) ALL ||| sudo usermod -aG wheel csscoder |||  Type exit, umount -a and reboot.\e[0m"
+printf "\e[1;32mDone!  Type exit, umount -a and reboot.\e[0m"
 
