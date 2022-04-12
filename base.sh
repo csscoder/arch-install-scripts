@@ -11,7 +11,7 @@ echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 arch.localdomain arch" >> /etc/hosts
 echo root:password | chpasswd
 
-pacman -S grub efibootmgr networkmanager
+pacman -S grub efibootmgr networkmanager dialog wpa_supplicant wireless_tools
  
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 
